@@ -1,0 +1,6 @@
+@Heroic.Verse.Api_HostAddress = http://localhost:5253
+
+GET {{Heroic.Verse.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
