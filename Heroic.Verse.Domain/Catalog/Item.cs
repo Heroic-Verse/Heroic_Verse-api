@@ -1,6 +1,6 @@
 using System;
 
-namespace Heroic.Verse.Catalog
+namespace Heroic.Verse.Catalog;
 
 {
     public class Item
@@ -8,37 +8,38 @@ namespace Heroic.Verse.Catalog
         public int Id { get; set; }
         public string name { get; set;}
         public string Description { get; set;}
-        oublic string Brand { get; set;}
+        public string Brand { get; set;}
         public decimal Price { get; set;}
-        public list<Rating> Ratings { get; set; } = new List<Ratings>();
+       // public List<Rating> Ratings { get; set; } = new List<Rating>();
+
     }
 }
 
-namespace Heroic.Verse.Domain.Catalog
+// namespace Heroic.Verse.Domain.Catalog
 
-public class Rating 
+// public class Rating 
 
-{
-    public int Stars { get; set;}
-    public string UserName { get; set;}
-    public string Review { get; set; }
-}
+// {
+//     public int Stars { get; set;}
+//     public string UserName { get; set;}
+//     public string Review { get; set; }
+// }
 
-public Rating(int stars, string userName, string review)
-{
-    if (stars <1 || stars > 5)
-    {
-        throw new ArgumentException("Star rating must be an interger of: 1, 2, 3, 4, 5, ");
-    }
-    if (string.IsNullOrEMpty(userName))
-    {
-            throw new ArgumentException("UserName cannot be null.");
-    }
+// public Rating(int stars, string userName, string review)
+// {
+//     if (stars <1 || stars > 5)
+//     {
+//         throw new ArgumentException("Star rating must be an interger of: 1, 2, 3, 4, 5, ");
+//     }
+//     if (string.IsNullOrEmpty(userName))
+//     {
+//             throw new ArgumentException("UserName cannot be null.");
+//     }
 
-    this.Stars = stars;
-    this.UserName = userName;
-    this.Review = review;
-}
+//     this.Stars = stars;
+//     this.UserName = userName;
+//     this.Review = review;
+// }
 
 public Item (string name, string description, string brand, decimal price)
 {
