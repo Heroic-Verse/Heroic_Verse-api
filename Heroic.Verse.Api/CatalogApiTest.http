@@ -1,0 +1,7 @@
+# Retrieve all catalog items
+GET http://localhost:5253/catalog
+Content-Type: application/json
+###
+# Retrieve a specific catalog item by ID
+GET http://localhost:5253/catalog/1
+Content-Type: application/json
