@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Heroic.Verse.Domain\Heroic.Verse.Domain.csproj" />
+    <ProjectReference Include="..\Heroic_Verse.Data\Heroic_Verse.Data.csproj" />
   </ItemGroup>
 
 </Project>
