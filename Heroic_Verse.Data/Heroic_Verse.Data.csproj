@@ -1,7 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.10" />
+  </ItemGroup>
+  
   <ItemGroup>
     <ProjectReference Include="..\Heroic.Verse.Domain\Heroic.Verse.Domain.csproj" />
+  </ItemGroup>
+
+<ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.10" />
   </ItemGroup>
 
   <PropertyGroup>
