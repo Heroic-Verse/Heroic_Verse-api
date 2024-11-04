@@ -1,4 +1,4 @@
-﻿using Heroic_Verse.Domain.Catalog
+﻿using Heroic.Verse.Domain.Catalog;
 using Microsoft.EntityFrameworkCore;
 
 namespace Heroic_Verse.Data
