@@ -14,8 +14,8 @@
     <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
   </ItemGroup>
 
-  <ItemGroup>
+  <!-- <ItemGroup>
     <ProjectReference Include="..\Heroic_Verse.Data\Heroic_Verse.Data.csproj" />
-  </ItemGroup>
+ </ItemGroup> -->
 
 </Project>
