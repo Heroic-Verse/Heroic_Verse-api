@@ -27,6 +27,9 @@ namespace Heroic.Verse.Api
             services.AddDbContext<StoreContext>(options =>
                 options.UseSqlite("Data Source=../Registrar.sqlite",
                 b => b.MigrationsAssembly("Heroic.Verse.Api")));
+            services.AddDbContext<StoreContext>(options =>
+    options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
+
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

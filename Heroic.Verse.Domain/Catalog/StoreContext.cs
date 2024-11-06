@@ -1,4 +1,5 @@
 ﻿using Heroic.Verse.Domain.Catalog;
+using Heroic_Verse.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Internal;
 
@@ -17,5 +18,5 @@ public class StoreContext : DbContext
             base.OnModelCreating(builder);
             DbInitializer.Initialize(builder);
         }
-  }
+    }
 }

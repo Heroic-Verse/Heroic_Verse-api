@@ -1,7 +1,8 @@
 using Heroic.Verse.Domain.Catalog;
 using Microsoft.EntityFrameworkCore;
 
-namespace Heroic_Verse.Data{
+namespace Heroic_Verse.Data
+{
     public static class DbInitializer
     {
         public static void Initialize(ModelBuilder builder)
