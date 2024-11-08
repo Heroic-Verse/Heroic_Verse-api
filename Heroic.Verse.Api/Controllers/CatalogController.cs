@@ -18,31 +18,47 @@ namespace Heroic.Verse.Api.Controllers
        [HttpGet]
        public IActionResult GetItems()
        {
+    
           return Ok(_db.Items);
        } 
-       [HttpGet("{id:int}")]
-        public ActionResult<Item> GetItem(int id)
-    {
-            var item = new Item("Shirt", "Ohio State shirt.", "Nike", 29.99m);
-            item.Id =id;
     
-            return Ok(item);
+
+
+        [HttpGet("{id:int}")]
+        public IActionResult GetItem(int id)
+    {
+            var item = _db.Items.Find(id);
+    if (item == null)
+   {
+         return NotFound();
+   }
+            return Ok();
     }
         [HttpPost]
-        public ActionResult<Item> PostItem(Item item)
+        public ActionResult<Item> Post(Item item)
     {
+      _db.Items.Add(item);
+      _db.SaveChanges();
+      return Created($"/catalog/{item.Id}", item);
     
-        return Created("/catalog/42", item);
+        
     }
         [HttpPost("{id:int}/ratings")]
         public IActionResult PostRating(int id, [FromBody] Rating rating)
         {
-            var item = new Item("Shirt", "Ohio State shirt.", "Nike", 29.99m);
-            item.Id = id;
+            var item = _db.Items.Find(id);
+            if (item == null)
+            {
+         return NotFound();
+            }
+
             item.AddRating(rating);
+            _db.SaveChanges();
+
 
             return Ok(item);
         }
+
         [HttpPut("{id:int}")]
         public IActionResult Put(int id, Item item)
         {
@@ -55,4 +71,3 @@ namespace Heroic.Verse.Api.Controllers
         }
    }
 }
-
