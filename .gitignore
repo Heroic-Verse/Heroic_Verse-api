@@ -6,6 +6,9 @@
 # dotenv files
 .env
 
+# exclude databasefiles
+*Registrar.sqlite
+
 # User-specific files
 *.rsuser
 *.suo
