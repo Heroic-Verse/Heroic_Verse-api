@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heroic.Verse.Domain", "Hero
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heroic_Verse.Data", "Heroic_Verse.Data\Heroic_Verse.Data.csproj", "{4158A556-07F5-4385-BEAC-16DDAA505657}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{7E8FBFF8-FB69-4616-9464-B66D2CD1E37F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heroic.Verse.Domain.Tests", "tests\Heroic.Verse.Domain.Tests\Heroic.Verse.Domain.Tests.csproj", "{43A2F515-C2FD-4DDD-8C51-BDCC0EF074B8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +34,12 @@ Global
 		{4158A556-07F5-4385-BEAC-16DDAA505657}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4158A556-07F5-4385-BEAC-16DDAA505657}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4158A556-07F5-4385-BEAC-16DDAA505657}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43A2F515-C2FD-4DDD-8C51-BDCC0EF074B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43A2F515-C2FD-4DDD-8C51-BDCC0EF074B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43A2F515-C2FD-4DDD-8C51-BDCC0EF074B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43A2F515-C2FD-4DDD-8C51-BDCC0EF074B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{43A2F515-C2FD-4DDD-8C51-BDCC0EF074B8} = {7E8FBFF8-FB69-4616-9464-B66D2CD1E37F}
 	EndGlobalSection
 EndGlobal
